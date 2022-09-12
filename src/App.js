@@ -1,34 +1,18 @@
 import { CssBaseline, ThemeProvider } from "@mui/material";
+import { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import RouterConfig from "./routing/RouterConfig";
 import { darkTheme, lightTheme } from "styles/theme";
-import { useSelector } from "react-redux";
 import "styles/globalStyles.css";
+import { thunkShows } from 'redux/showTv.slice';
 
 function App() {
-  const { mode } = useSelector((state) => state.theme);
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(thunkShows()), []);
   return (
-    <ThemeProvider theme={handleTheme(mode)}>
-      <CssBaseline />
-      <RouterConfig />
-    </ThemeProvider>
+    <RouterConfig />
   );
 }
 
-const handleTheme = (mode) => {
-  switch (mode) {
-    case "light":
-      return lightTheme;
-    case "dark":
-      return darkTheme;
-    case "browser":
-      return window.matchMedia &&
-        window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? darkTheme
-        : lightTheme;
-
-    default:
-      return darkTheme;
-  }
-};
 
 export default App;
