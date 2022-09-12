@@ -1,3 +1,3 @@
-import CenterContainer from "./CenterContainer";
+import CenterContainer from './CenterContainer';
 
-export default CenterContainer
+export default CenterContainer;

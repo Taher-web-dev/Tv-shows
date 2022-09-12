@@ -1,15 +1,15 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = { text: '' };
 
 const keywordSlice = createSlice({
-    name: 'keyword',
-    initialState,
-    reducers: {
-        changeKeyword: (state, action) => {
-            state.text = action.payload;
-        }
-    }
+  name: 'keyword',
+  initialState,
+  reducers: {
+    changeKeyword: (state, action) => {
+      state.text = action.payload;
+    },
+  },
 });
 
 export const { changeKeyword } = keywordSlice.actions;

@@ -1,4 +1,4 @@
-let globalTheme = (mode) => ({
+const globalTheme = () => ({
   typography: {
     fontFamily: "'Poppins', sans-serif",
   },

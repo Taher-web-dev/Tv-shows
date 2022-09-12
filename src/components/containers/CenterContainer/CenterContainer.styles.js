@@ -1,11 +1,13 @@
-import { Box, styled } from "@mui/material";
+import { Box, styled } from '@mui/material';
 
-export const Container = styled(Box, {
-  shouldForwardProp: (prop) => prop !== "height",
+const Container = styled(Box, {
+  shouldForwardProp: (prop) => prop !== 'height',
 })(({ height }) => ({
-  width: "100%",
-  height: height ? height : "100vh",
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
+  width: '100%',
+  height: height || '100vh',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
 }));
+
+export default Container;

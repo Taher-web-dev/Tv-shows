@@ -1,24 +1,33 @@
 const filterTvShows = (initial, keywords) => (
-    initial.filter((item) => item.name.includes(keywords))
+  initial.filter((item) => item.name.includes(keywords))
 );
 
-const manageHomeState = (shows, dispatch, showapiError, apiError, tvShows, keyWord, callTosearch, shownoResults, shownoMessage) => {
-    if (apiError) {
-        dispatch(showapiError(apiError));
-        tvShows = [];
+const manageHomeState = (
+  shows,
+  dispatch,
+  showapiError,
+  apiError,
+  tvShows,
+  keyWord,
+  callTosearch,
+  shownoResults,
+  shownoMessage,
+) => {
+  let tv = tvShows;
+  if (apiError) {
+    dispatch(showapiError(apiError));
+    tv = [];
+  } else if (keyWord.trim().length === 0) {
+    dispatch(callTosearch());
+  } else {
+    tv = filterTvShows(shows, keyWord);
+    if (tv.length === 0) {
+      dispatch(shownoResults(keyWord));
     } else {
-        if (keyWord.trim().length === 0) {
-            dispatch(callTosearch());
-        } else {
-            tvShows = filterTvShows(shows, keyWord);
-            if (tvShows.length === 0) {
-                dispatch(shownoResults(keyWord));
-            } else {
-                dispatch(shownoMessage());
-            }
-        }
+      dispatch(shownoMessage());
     }
-    return tvShows;
+  }
+  return tv;
 };
 
 export default manageHomeState;

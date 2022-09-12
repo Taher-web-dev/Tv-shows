@@ -1,11 +1,11 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from '@reduxjs/toolkit';
 
 const initialState = {
-  mode: "browser", // browser || light || dark
+  mode: 'browser', // browser || light || dark
 };
 
 const themeSlice = createSlice({
-  name: "theme",
+  name: 'theme',
   initialState,
   reducers: {
     setThemeMode: (state, action) => {
@@ -13,7 +13,7 @@ const themeSlice = createSlice({
     },
     setDarkMode: (state, action) => {
       state.mode = action.payload;
-    }
+    },
   },
 });
 

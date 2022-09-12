@@ -1,13 +1,13 @@
-import { createTheme, responsiveFontSizes } from "@mui/material";
-import globalTheme from "./globalTheme";
+import { createTheme, responsiveFontSizes } from '@mui/material';
+import globalTheme from './globalTheme';
 
 let darkTheme = createTheme({
-  ...globalTheme("dark"),
+  ...globalTheme('dark'),
   palette: {
-    mode: "dark",
-    ...globalTheme("dark").palette,
+    mode: 'dark',
+    ...globalTheme('dark').palette,
     background: {
-      default: "#141414",
+      default: '#141414',
     },
   },
 });
