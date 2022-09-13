@@ -1,70 +1,69 @@
+# TV Shows
+> In this small Project, I created a TV Shows app that display a list of TV Shows fetched from the API. When clicking on a card you are taken to a new page that displays TV Show details.
+
+## Project Preview
+
+App-Preview                          
+:---------------------------------------------------------------------------------:
+![]('./src/statics/images/home_desktop')  
+
+Desktop-Home                             
+:---------------------------------------------------------------------------------:
+![](./src/assets/images/home_desktop.png)
+
+Desktop-Show-Item                            
+:---------------------------------------------------------------------------------:
+![](./src/assets/images/detail-page.png)
+
+
+## Front-end Live Demo
+> Click [here](https://todo-handson.netlify.app/) to see the live preview of the project.
+
+
+### Built With
+
+- [React](https://es.reactjs.org/)
+- [JS](https://www.javascript.com/)
+- [HTML](https://www.w3schools.com/html/)
+- [CSS](https://www.w3schools.com/css/)
+- [REACT-BOOTSTRAP](https://react-bootstrap.github.io/)
+- [@MUI/MATERIAL](https://mui.com/)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Installation
 
-In the project directory, you can run:
+1. Clone the repository
+   ```sh
+   git clone git@github.com:Mehdi-BHA/Pengguin-test-starter-project.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+3. Run server
+   ```sh
+   npm start
+   ```
+   
 
-### `npm start`
+## Authors
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+👤 **Taher Haggui**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- GitHub: [@Taher-web-dev](https://github.com/Taher-web-dev)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/taher-haggui/)
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🤝 Contributing
 
-### `npm run build`
+Contributions, issues, and feature requests are welcome!
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Feel free to check the [issues page](../../issues/).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Show your support
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Give a ⭐️ if you like this project!
