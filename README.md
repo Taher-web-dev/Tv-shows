@@ -37,7 +37,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 1. Clone the repository
    ```sh
-   git clone git@github.com:Mehdi-BHA/Pengguin-test-starter-project.git
+   git clone https://github.com/Taher-web-dev/Tv-shows
    ```
 2. Install NPM packages
    ```sh
