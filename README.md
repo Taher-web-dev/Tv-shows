@@ -3,10 +3,6 @@
 
 ## Project Preview
 
-App-Preview                          
-:---------------------------------------------------------------------------------:
-![]('./src/statics/images/home_desktop')  
-
 Desktop-Home                             
 :---------------------------------------------------------------------------------:
 ![](https://github.com/Taher-web-dev/Tv-shows/blob/main/src/statics/images/home_desktop.png)
