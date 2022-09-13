@@ -9,15 +9,15 @@ App-Preview
 
 Desktop-Home                             
 :---------------------------------------------------------------------------------:
-![](./src/assets/images/home_desktop.png)
+![](https://github.com/Taher-web-dev/Tv-shows/blob/main/src/statics/images/home_desktop.png)
 
 Desktop-Show-Item                            
 :---------------------------------------------------------------------------------:
-![](./src/assets/images/detail-page.png)
+![](https://github.com/Taher-web-dev/Tv-shows/blob/main/src/statics/images/detail_page.png)
 
 
 ## Front-end Live Demo
-> Click [here](https://todo-handson.netlify.app/) to see the live preview of the project.
+> Click [here](https://tv-shows-test.netlify.app/) to see the live preview of the project.
 
 
 ### Built With
