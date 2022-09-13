@@ -7,6 +7,7 @@ import { thunkEpisodes } from 'redux/episodes.slice';
 import TvGinformation, { MultiActionAreaCard } from './Show.styles';
 
 const Show = () => {
+  const w = window.innerWidth;
   const dispatch = useDispatch();
   const location = useLocation();
   const { state } = location;
@@ -17,6 +18,7 @@ const Show = () => {
   let episodes = episodesState.data[id];
   if (episodes && episodes.length > 0) {
     episodes = [...new Map(episodes.map((item) => [item.episode_number, item])).values()];
+    episodes = episodes.sort((a, b) => a.episode_number - b.episode_number);
   }
   const { data, error } = currentTv;
   const dataL = Object.keys(data).length;
@@ -50,6 +52,7 @@ const Show = () => {
           producer={producer}
           seasonName={seasonName}
           episodeCount={episodeCount}
+          w={w}
         />
       )}
       <div style={{ width: '80%', marginLeft: '10%' }}>
@@ -61,6 +64,7 @@ const Show = () => {
             description={episode.overview}
             imgPath={episode.still_path}
             episodeNumber={episode.episode_number}
+            w={w}
           />
         )))}
       </div>

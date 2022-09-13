@@ -6,6 +6,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import { pink } from '@mui/material/colors';
 import SvgIcon from '@mui/material/SvgIcon';
+import PropTypes from 'prop-types';
 
 const HomeIcon = (props) => (
   <SvgIcon {...props}>
@@ -13,15 +14,16 @@ const HomeIcon = (props) => (
   </SvgIcon>
 );
 
-export const SvgIconsColor = () => {
+export const SvgIconsColor = (props) => {
   const navigate = useNavigate();
+  const { w } = props;
   return (
     <Box
       sx={{
         '& > :not(style)': {
           m: 2,
         },
-        marginLeft: '10%',
+        marginLeft: w < 726 ? '1.25%' : '10%',
       }}
       onClick={() => navigate('/')}
     >
@@ -29,6 +31,7 @@ export const SvgIconsColor = () => {
     </Box>
   );
 };
+
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
   height: 34,
@@ -75,5 +78,9 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
     borderRadius: 20 / 2,
   },
 }));
+
+SvgIconsColor.propTypes = {
+  w: PropTypes.instanceOf(Number).isRequired,
+};
 
 export default MaterialUISwitch;

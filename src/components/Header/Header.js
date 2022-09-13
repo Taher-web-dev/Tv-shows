@@ -21,6 +21,7 @@ const theme = createTheme({
 });
 
 const Header = () => {
+  const w = window.innerWidth;
   const dispatch = useDispatch();
   const { tolc, updateTlastchange } = TimebTyping();
   const switchMode = (e) => {
@@ -41,17 +42,17 @@ const Header = () => {
   };
   return (
     <div style={{
-      backgroundColor: 'rgb(39, 39, 39)', display: 'flex', alignItems: 'center', padding: '0.625% 0',
+      backgroundColor: 'rgb(39, 39, 39)', display: 'flex', alignItems: 'center', padding: w < 726 ? '2.5% 0' : '0.625% 0',
     }}
     >
-      <SvgIconsColor />
+      <SvgIconsColor w={w} />
       <ThemeProvider theme={theme}>
-        <TextField label="Search" color="secondary" style={{ marginLeft: '20%' }} onChange={makeSearch} focused />
+        <TextField label="Search" color="secondary" style={{ marginLeft: w < 726 ? '0' : '20%', width: w < 726 ? '45%' : '25%', marginRight: w < 726 ? '5%' : '20%' }} onChange={makeSearch} focused />
       </ThemeProvider>
       <Button
         variant="contained"
         style={{
-          backgroundColor: 'rgb(228,77,26)', color: 'white', justifySelf: 'flex-end', marginLeft: '25%',
+          backgroundColor: 'rgb(228,77,26)', color: 'white', justifySelf: 'flex-end', display: w < 726 ? 'none' : 'block',
         }}
       >
         WATCH LIST

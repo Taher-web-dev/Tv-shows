@@ -42,7 +42,7 @@ const Home = () => {
       </Alert>
       <Grid container spacing={2} style={{ width: '85%', margin: '0 0 0 7.5%' }}>
         {(tvShows.length > 0) && (tvShows.map((show) => (
-          <Grid item xs={3} key={show.id} onClick={() => navigate(`/show/${show.id}`, { state: { id: show.id } })} style={{ cursor: 'pointer' }}>
+          <Grid item xs={12} md={3} key={show.id} onClick={() => navigate(`/show/${show.id}`, { state: { id: show.id } })} style={{ cursor: 'pointer', paddingLeft: 0 }}>
             {BasicCard(show.backdrop_path, show.original_name)}
           </Grid>
         )))}
